@@ -1,0 +1,8 @@
+just scrape from one account --> train neural network with one caption style
+case study 1: humansofny
+case study 2: natgeo
+
+another case study = verified accounts
+pulled 100 verified accounts from the link below:
+https://www.rollingstone.com/interactive/features-the-100-best-instagram-accounts/#betches
+

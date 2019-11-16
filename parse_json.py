@@ -13,9 +13,9 @@ num_dump = 0
 no_image = 0
 no_caption = 0
 has_quotes = 0
-for fn in os.listdir("profiles/"):
+for fn in os.listdir("profiles_sejal/"):
     if fn.endswith(".json"):
-        f = open("profiles/" + fn)
+        f = open("profiles_sejal/" + fn)
         data = json.load(f)
         try:
             posts = data["posts"]
@@ -50,15 +50,15 @@ print("usable:", len(captions) + 2*valid_collections, round((len(captions)+2*val
 print("\tvalid collections:", valid_collections * 2, round(2*valid_collections* 100 / total, 2))
 print("\tvalid single photos:", len(captions), round(len(captions)*100/total, 2))
 
-with open('data.csv', 'w') as f:
+with open('data_sejal.csv', 'w') as f:
     f.write("username,photo,caption\n")
     for i in range(len(photos)):
         f.write("%s,%s,\"%s\"\n" % (identifier[i],photos[i], captions[i]))
 f.close()
 
 try:
-    csv = pd.read_csv("data.csv", header=0)
+    csv = pd.read_csv("data_sejal.csv", header=0)
     csv.drop_duplicates(keep="first",inplace=True)
-    csv.to_csv("data.csv", index=False)
+    csv.to_csv("data_sejal.csv", index=False)
 except:
     print('pandas stuff did not work')

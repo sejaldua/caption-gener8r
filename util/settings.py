@@ -6,21 +6,21 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OS_ENV = "windows" if p_os == "win32" else "osx" if p_os == "darwin" else "linux"
 
 class Settings:
-    profile_location = os.path.join(BASE_DIR, 'profiles')
-    profile_commentors_location = os.path.join(BASE_DIR, 'profiles')
+    profile_location = os.path.join(BASE_DIR, 'profiles_verified')
+    profile_commentors_location = os.path.join(BASE_DIR, 'profiles_verified')
     profile_file_with_timestamp = True
-    profile_commentors_file_with_timestamp = True
+    profile_commentors_file_with_timestamp = False
     limit_amount = 100
     scrape_posts_infos = True
     scrape_posts_likers = False
     scrape_follower = False
     output_comments = True
-    sleep_time_between_post_scroll = 1.5
+    sleep_time_between_post_scroll = 2
     sleep_time_between_comment_loading = 2
     mentions = True
 
     log_output_toconsole = True
-    log_output_tofile = True
+    log_output_tofile = False
     log_file_per_run = False
     log_location = os.path.join(BASE_DIR, 'logs')
 

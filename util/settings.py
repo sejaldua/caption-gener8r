@@ -28,8 +28,8 @@ class Settings:
     # Set a logger cache outside object to avoid re-instantiation issues
     loggers = {}
 
-    login_username = 'sejaldua99'
-    login_password = 'Sejalu99'
+    login_username = 'camillebowman'
+    login_password = 'neural19'
 
     #chromedriver
     chromedriver_min_version = 2.36

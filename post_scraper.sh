@@ -1,5 +1,5 @@
 #!/bin/bash
-input="sejal_followers.txt"
+input="erikaaanakagawa_followers.txt"
 args=""
 space=" "
 while IFS= read -r line

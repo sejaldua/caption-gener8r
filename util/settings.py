@@ -6,8 +6,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OS_ENV = "windows" if p_os == "win32" else "osx" if p_os == "darwin" else "linux"
 
 class Settings:
-    profile_location = os.path.join(BASE_DIR, 'profiles_erika')
-    profile_commentors_location = os.path.join(BASE_DIR, 'profiles_erika')
+    profile_location = os.path.join(BASE_DIR, 'profiles/profiles_erika')
+    profile_commentors_location = os.path.join(BASE_DIR, 'profiles/profiles_erika')
     profile_file_with_timestamp = True
     profile_commentors_file_with_timestamp = False
     limit_amount = 100

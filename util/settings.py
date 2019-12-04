@@ -6,8 +6,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OS_ENV = "windows" if p_os == "win32" else "osx" if p_os == "darwin" else "linux"
 
 class Settings:
-    profile_location = os.path.join(BASE_DIR, 'profiles/profiles_erika')
-    profile_commentors_location = os.path.join(BASE_DIR, 'profiles/profiles_erika')
+    profile_location = os.path.join(BASE_DIR, 'profiles/')
+    profile_commentors_location = os.path.join(BASE_DIR, 'profiles/')
     profile_file_with_timestamp = True
     profile_commentors_file_with_timestamp = False
     limit_amount = 100
@@ -16,7 +16,7 @@ class Settings:
     scrape_follower = False
     output_comments = False
     sleep_time_between_post_scroll = 3
-    sleep_time_between_comment_loading = 0.5
+    sleep_time_between_comment_loading = 2
     mentions = True
 
     log_output_toconsole = True
@@ -28,8 +28,8 @@ class Settings:
     # Set a logger cache outside object to avoid re-instantiation issues
     loggers = {}
 
-    login_username = 'erikaaanakagawa'
-    login_password = 'neural19'
+    login_username = 'INSERT-USERNAME-HERE'
+    login_password = 'INSERT-PASSWORD-HERE'
 
     #chromedriver
     chromedriver_min_version = 2.36

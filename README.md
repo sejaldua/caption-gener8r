@@ -37,7 +37,7 @@ In `util/settings.py`, we made the following changes:
 * change variable `sleep_time_between_post_scroll` to 3 or 4 depending on wifi strength
 * change variable `sleep_time_between_comment_loading` to 0.5 if you do not need comment data, 3 if you do
 
-#### Optional login
+### Optional login
 If you want to scrape private users (profiles) whom you follow:
 1. Open Settings.py
 2. Search for `login_username` & `login_password`
